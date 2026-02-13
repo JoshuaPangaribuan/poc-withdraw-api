@@ -1,0 +1,13 @@
+.env
+.env.inquiry
+.env.withdraw
+config.yaml
+config.inquiry.yaml
+config.withdraw.yaml
+
+!.env.example
+!.env.inquiry.example
+!.env.withdraw.example
+!config.yaml.example
+!config.inquiry.yaml.example
+!config.withdraw.yaml.example

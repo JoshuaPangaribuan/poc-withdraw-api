@@ -1,0 +1,8 @@
+with-expecter: true
+all: true
+recursive: true
+dir: internal
+output: internal/mock
+keeptree: true
+outpkg: mocks
+issue-845-fix: true

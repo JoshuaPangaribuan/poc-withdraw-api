@@ -1,0 +1,49 @@
+server:
+  port: 8080
+  read_timeout: 30s
+  write_timeout: 30s
+
+database:
+  host: localhost
+  port: 5432
+  name: inquiry_db
+  user: admin
+  password: secret
+  ssl_mode: disable
+  auth:
+    host: localhost
+    port: 5432
+    name: auth_db
+    user: admin
+    password: secret
+    ssl_mode: disable
+  wallet:
+    host: localhost
+    port: 5433
+    name: wallet_db
+    user: admin
+    password: secret
+    ssl_mode: disable
+
+redis:
+  host: localhost
+  port: 6379
+  password: ""
+  db: 0
+
+rate_limit:
+  withdraw:
+    algorithm: token_bucket
+    limit: 20
+    burst: 20
+    window: 1m
+
+logging:
+  level: info
+  format: json
+
+security:
+  jwt:
+    issuer: inquiry-service
+    ttl: 15m
+    secret: change-me-please-use-strong-secret-in-production
